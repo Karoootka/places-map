@@ -1,0 +1,13 @@
+body { font-family: sans-serif; }
+
+.carousel-cell { width: 100%; /* full width */ height: 50vh; /* height of carousel */ min-height: 250px; margin-right: 10px; }
+
+.container { max-width: 1200px; margin: 0 auto; text-align: center; height: 100%; background-size: cover; }
+
+.container p { color: #fff; margin: 0; padding-top: 5px; }
+
+.button--restart { display: block; margin: 5px auto; padding: 5px; }
+
+.progress-bar { height: 20px; width: 0; background: #333; }
+
+.flickity-page-dots { bottom: -40px; }
