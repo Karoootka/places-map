@@ -1,6 +1,6 @@
 body { font-family: sans-serif; }
 
-.carousel-cell { width: 100%; /* full width */ height: 50vh; /* height of carousel */ min-height: 250px; margin-right: 10px; }
+.carousel-cell { width: 100%; /* full width */ height: 45vh; /* height of carousel */ min-height: 250px; margin-right: 10px; }
 
 .container { max-width: 1200px; margin: 0 auto; text-align: center; height: 100%; background-size: cover; }
 
@@ -11,3 +11,5 @@ body { font-family: sans-serif; }
 .progress-bar { height: 20px; width: 0; background: #333; }
 
 .flickity-page-dots { bottom: -40px; }
+
+#map { height: 45vh; width: 100%; }

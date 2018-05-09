@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Visited places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendor/flickity.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,6 +20,7 @@
 
     <div class="progress-bar"></div>
 
+    <div id="map"></div>
 
     <script id="template-slide-item" type="x-tmpl-mustache">
     <div class="carousel-cell" id="carousel-cell{{index}}">
@@ -36,19 +38,22 @@
     		image: 'https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&h=350',
     		title: 'TREŚĆ OPIS 1',
     		description: '<p>Lorem ipsum</p>',
-        index: 1
+        index: 1,
+        coords: {lat: 42.988548, lng: 12.482042}
     	},
     	{
     		image: 'https://images.pexels.com/photos/248771/pexels-photo-248771.jpeg?auto=compress&cs=tinysrgb&h=350',
     		title: 'TREŚĆ OPIS 2',
     		description: '<p>Dolor sit amet</p>',
-        index: 2
+        index: 2,
+        coords: {lat: 41.517838, lng: 2.172462}
     	},
     	{
     		image: 'https://images.pexels.com/photos/893126/pexels-photo-893126.jpeg?auto=compress&cs=tinysrgb&h=350',
     		title: 'TREŚĆ OPIS 3',
     		description: '<p>Donec fermenutm</p>',
-        index: 3
+        index: 3,
+        coords: {lat: 53.094299, lng: 5.235204}
     	}
     ];
     </script>
@@ -56,6 +61,7 @@
     <script src="vendor/flickity.js"></script>
     <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
     <script src="vendor/mustache.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSc9IZxsZpnH234kR8CeHO9TmFWwVV1Jk&callback=initMap"></script>
     <script src="js/script.js"></script>
 
   </body>
